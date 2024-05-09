@@ -1,5 +1,3 @@
-require_relative '../spec_helper'
-
 RSpec.describe 'ContainsDuplicate' do
   context 'when nums array contains unique integers' do
     it 'returns false' do

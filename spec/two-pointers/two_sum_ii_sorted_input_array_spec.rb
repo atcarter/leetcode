@@ -8,9 +8,9 @@ RSpec.describe 'TwoSumIiSortedInputArray' do
       numbers_three = [-1, 0]
       target_three = -1
 
-      expect(two_sum(numbers_one, target_one)).to eq([1, 2])
-      expect(two_sum(numbers_two, target_two)).to eq([1, 3])
-      expect(two_sum(numbers_three, target_three)).to eq([1, 2])
+      expect(two_sum_ii(numbers_one, target_one)).to eq([1, 2])
+      expect(two_sum_ii(numbers_two, target_two)).to eq([1, 3])
+      expect(two_sum_ii(numbers_three, target_three)).to eq([1, 2])
     end
   end
 end

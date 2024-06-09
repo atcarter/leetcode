@@ -3,7 +3,7 @@
 # @return {Integer[]}
 # TC: O(n)
 # SC: O(1)
-def two_sum(numbers, target)
+def two_sum_ii(numbers, target)
   left = 0
   right = numbers.length - 1
 

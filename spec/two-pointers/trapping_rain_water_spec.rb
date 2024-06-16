@@ -9,7 +9,7 @@ RSpec.describe 'TrappingRainWater' do
 
   context 'when height = [4,2,0,3,2,5]' do
     it 'returns 9' do
-      height = [4,2,0,3,2,5]
+      height = [4, 2, 0, 3, 2, 5]
 
       expect(trap(height)).to eq(9)
     end

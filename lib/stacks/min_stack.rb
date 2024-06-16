@@ -5,12 +5,10 @@ class MinStack
     @min_stack = []
   end
 
-=begin
-    :type val: Integer
-    :rtype: Void
-=end
+  #     :type val: Integer
+  #     :rtype: Void
   def push(val)
-    if @min_stack[-1] == nil
+    if @min_stack[-1].nil?
       @min_stack.push(val)
     elsif val <= @min_stack[-1]
       @min_stack.push(val)
@@ -18,11 +16,9 @@ class MinStack
     @stack.push(val)
   end
 
-=begin
-    :rtype: Void
-=end
+  #     :rtype: Void
   def pop
-    if self.top == self.get_min
+    if top == get_min
       @min_stack.pop
       @stack.pop
     else
@@ -30,20 +26,15 @@ class MinStack
     end
   end
 
-=begin
-    :rtype: Integer
-=end
+  #     :rtype: Integer
   def top
     @stack[-1]
   end
 
-=begin
-    :rtype: Integer
-=end
+  #     :rtype: Integer
   def get_min
     @min_stack[-1]
   end
-
 end
 
 # Your MinStack object will be instantiated and called as such:

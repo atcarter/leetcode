@@ -7,10 +7,8 @@ def two_sum(nums, target)
   hash = {}
   nums.each_with_index do |num, index|
     ideal = target - num
-    if hash.has_key?(ideal)
-      return [index, hash[ideal]]
-    else
-      hash[num] = index
-    end
+    return [index, hash[ideal]] if hash.has_key?(ideal)
+
+    hash[num] = index
   end
 end

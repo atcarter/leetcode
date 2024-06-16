@@ -8,9 +8,7 @@ def is_palindrome(s)
   right = s.length - 1
 
   while left < right
-    if s[left].downcase != s[right].downcase
-      return false
-    end
+    return false if s[left].downcase != s[right].downcase
 
     left += 1
     right -= 1

@@ -7,13 +7,11 @@ def longest_consecutive(nums)
   longest = 0
 
   nums_set.each do |num|
-    if !nums_set.include?(num - 1)
-      length = 1
-      while nums_set.include?(num + length)
-        length += 1
-      end
-      longest = [longest, length].max
-    end
+    next if nums_set.include?(num - 1)
+
+    length = 1
+    length += 1 while nums_set.include?(num + length)
+    longest = [longest, length].max
   end
 
   longest

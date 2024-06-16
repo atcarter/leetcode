@@ -10,9 +10,7 @@ def max_area(height)
   while left < right
     area = (right - left) * [height[left], height[right]].min
 
-    if area > max
-      max = area
-    end
+    max = area if area > max
 
     if height[left] <= height[right]
       left += 1

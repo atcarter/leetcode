@@ -5,7 +5,7 @@
 # TC: O(n) going over each string in the array once.
 # SC: O(1) constant space is used as no extra structures are required.
 def encode(strs)
-  result = ""
+  result = ''
 
   strs.each do |string|
     length = string.length
@@ -27,9 +27,7 @@ def decode(s)
 
   while i < s.length
     j = i
-    while s[j] != '#'
-      j += 1
-    end
+    j += 1 while s[j] != '#'
     length = s[i...j].to_i
     i = j + 1
     j = i + length

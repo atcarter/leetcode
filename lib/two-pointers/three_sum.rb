@@ -7,13 +7,9 @@ def three_sum(nums)
   nums.sort!
 
   nums.each_with_index do |num, i|
-    if num > 0
-      break
-    end
+    break if num > 0
 
-    if i > 0 && nums[i - 1] == nums[i]
-      next
-    end
+    next if i > 0 && nums[i - 1] == nums[i]
 
     left = i + 1
     right = nums.length - 1

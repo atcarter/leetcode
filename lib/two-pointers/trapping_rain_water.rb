@@ -22,6 +22,6 @@ def trap(height)
       amount += difference
     end
   end
-  
+
   amount
 end

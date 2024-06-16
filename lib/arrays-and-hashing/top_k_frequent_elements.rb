@@ -5,7 +5,7 @@
 # SC: O(n) because we store each num in the input array in a hash and in another array
 def top_k_frequent(nums, k)
   hash = {}
-  bucket_array = Array.new(nums.length + 1) { Array.new }
+  bucket_array = Array.new(nums.length + 1) { [] }
   result = []
 
   nums.each do |num|
@@ -20,9 +20,7 @@ def top_k_frequent(nums, k)
     numbers.each do |elem|
       result << elem
 
-      if result.length == k
-        return result
-      end
+      return result if result.length == k
     end
   end
 end

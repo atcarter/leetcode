@@ -10,7 +10,7 @@ def group_anagrams(strings)
     key = [0] * 26
 
     string.chars.each do |char|
-      key[char.ord - 'a'.ord] += 1
+      key[char.ord - "a".ord] += 1
     end
 
     hash[key] ? hash[key] << string : hash[key] = [string]

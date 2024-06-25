@@ -7,15 +7,15 @@ def eval_rpn(tokens)
 
   tokens.each do |token|
     case token
-    when  '+'
+    when "+"
       stack << (stack.pop.to_i + stack.pop.to_i)
-    when  '-'
+    when "-"
       subtrahend = stack.pop.to_i
       minuend = stack.pop.to_i
       stack << (minuend - subtrahend)
-    when '*'
+    when "*"
       stack << (stack.pop.to_i * stack.pop.to_i)
-    when '/'
+    when "/"
       divisor = stack.pop.to_i
       dividend = stack.pop.to_i
       stack << (dividend.to_f / divisor.to_f).truncate

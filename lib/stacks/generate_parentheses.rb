@@ -19,12 +19,12 @@ def backtrack(open_count, close_count)
     return
   end
   if open_count < @n_pairs
-    @stack << '('
+    @stack << "("
     backtrack(open_count + 1, close_count)
     @stack.pop
   end
   if close_count < open_count
-    @stack << ')'
+    @stack << ")"
     backtrack(open_count, close_count + 1)
     @stack.pop
   end

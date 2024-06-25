@@ -4,9 +4,9 @@
 # SC: O(n) since the stack could contain as many characters as our input string.
 def is_valid(s)
   hash = {
-    ')' => '(',
-    ']' => '[',
-    '}' => '{'
+    ")" => "(",
+    "]" => "[",
+    "}" => "{"
   }
 
   stack = []

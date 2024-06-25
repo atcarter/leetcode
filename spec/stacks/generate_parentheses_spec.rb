@@ -1,13 +1,13 @@
-RSpec.describe 'GenerateParentheses' do
-  context 'when n is 3' do
+RSpec.describe "GenerateParentheses" do
+  context "when n is 3" do
     it 'returns ["((()))","(()())","(())()","()(())","()()()"]' do
-      expect(generate_parenthesis(3)).to eq(['((()))', '(()())', '(())()', '()(())', '()()()'])
+      expect(generate_parenthesis(3)).to eq(["((()))", "(()())", "(())()", "()(())", "()()()"])
     end
   end
 
-  context 'when n is 1' do
+  context "when n is 1" do
     it 'returns ["()"]' do
-      expect(generate_parenthesis(1)).to eq(['()'])
+      expect(generate_parenthesis(1)).to eq(["()"])
     end
   end
 end

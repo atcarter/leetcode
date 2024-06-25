@@ -9,7 +9,7 @@ def is_valid_sudoku(board)
 
   (0...9).each do |row|
     (0...9).each do |col|
-      if board[row][col] == '.'
+      if board[row][col] == "."
         next
       elsif row_set[row].add?(board[row][col]).nil?
         return false

@@ -1,6 +1,6 @@
-RSpec.describe 'TwoSumIiSortedInputArray' do
-  context 'given a sorted input array and a target integer' do
-    it 'returns the 1-indexed indices of the two numbers that sum to target' do
+RSpec.describe "TwoSumIiSortedInputArray" do
+  context "given a sorted input array and a target integer" do
+    it "returns the 1-indexed indices of the two numbers that sum to target" do
       numbers_one = [2, 7, 11, 15]
       target_one = 9
       numbers_two = [2, 3, 4]

@@ -2,6 +2,5 @@
 
 source "https://rubygems.org"
 
-# gem "rails"
-gem "rspec"
+gem "rspec-rails"
 gem "standard", group: [:development, :test]

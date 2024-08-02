@@ -14,13 +14,12 @@ def trap(height)
       left += 1
       left_max = [left_max, height[left]].max
       difference = left_max - height[left]
-      amount += difference
     else
       right -= 1
       right_max = [right_max, height[right]].max
       difference = right_max - height[right]
-      amount += difference
     end
+    amount += difference
   end
 
   amount

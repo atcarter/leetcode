@@ -20,10 +20,8 @@ class MinStack
   def pop
     if top == get_min
       @min_stack.pop
-      @stack.pop
-    else
-      @stack.pop
     end
+    @stack.pop
   end
 
   #     :rtype: Integer
